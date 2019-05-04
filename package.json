@@ -13,8 +13,10 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
+    "esnext": "^3.3.1",
     "gatsby": "^2.4.0",
     "gatsby-plugin-glamor": "^2.0.9",
+    "gatsby-plugin-typescript": "^2.0.13",
     "glamor": "^2.20.40",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"

@@ -1,17 +1,10 @@
 import React from "react"
 import { navigate} from "gatsby"
+import styles from "../styles/css_in_js"
 export default (props) => 
     (   
-        <div style={{display: `flex`, justifyContent:`center`, alignItems:`center`, height:`100%`,width:`100px`, margin:`0`, padding:`0`, textAlign:`center`,
-            }}
-            css={{
-                ':hover': {
-                    cursor:`pointer`,
-                    //backgroundColor:`black`,
-                    textDecoration: `underline`,
-                    backgroundColor: `rgba(255,0,0,.5)`, 
-                },
-            }}
+        <div 
+            css={styles.banner_link}
             onClick = { event => {
                 event.preventDefault()
                 navigate(props.url)

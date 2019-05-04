@@ -1,0 +1,15 @@
+.dropdown:hover .dropdown-menu{
+    display:block;
+}
+.dropdown{
+    float: left;
+
+    display: block;
+}
+.dropdown-menu{
+    z-index: 1;
+    background: orange;
+    display: none;
+    position: relative;
+    width: 100%;
+}
