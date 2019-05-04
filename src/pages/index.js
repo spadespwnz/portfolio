@@ -1,3 +1,7 @@
 import React from "react"
-
-export default () => <div>Hello world!</div>
+import Banner from "../components/banner"
+export default () => (
+        <div>
+            <Banner />
+        </div>
+    )
