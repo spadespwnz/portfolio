@@ -11,20 +11,20 @@ export default () =>
                     //backgroundColor: `black`, 
                     cursor:`pointer`,
                     fontSize:`300%`,
-                    color:`red`,
                     transitionDuration: `0.5s`,
                     
                 },
-                fontSize:`100%`,
+                fontSize:`200%`,
                 color:`black`,
                 backgroundColor:`white`,
+                transitionDuration: `0.2s`,
             }}
             onClick = { event => {
                 event.preventDefault()
                 navigate("/")
             }}
             >
-            Nathan Brown
+            NathanBrown.com
             </div>
         </div>
     )

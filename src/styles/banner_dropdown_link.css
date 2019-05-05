@@ -8,7 +8,6 @@
 }
 .dropdown-menu{
     z-index: 1;
-    background: orange;
     display: none;
     position: relative;
     width: 100%;

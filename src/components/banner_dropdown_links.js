@@ -7,7 +7,18 @@ import { navigate} from "gatsby"
 export default (props) => (
         <div className="dropdown" css={styles.banner_link}>
             <div css={{width:`100%`,height:`100%`, display:`flex`,justifyContent:`center`,alignItems:`center`}}>
-                {props.name}
+                <p>{props.name}
+
+                <div css={{
+                    margin: `auto`,
+                    width: `0`,
+                    height: `0`,
+                    borderLeft: `6px solid transparent`,
+                    borderRight: `6px solid transparent`,
+                    borderTop: `6px solid black`,
+                }}>
+                </div>
+                </p>
             </div>
             <div  className="dropdown-menu">
                 {props.items.map((item,i) => {
