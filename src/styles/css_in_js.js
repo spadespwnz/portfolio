@@ -48,16 +48,18 @@ module.exports = {
         marginTop: `100px`,
         marginLeft: `50px`,
         display: `inline-block`,
-        border: `2px solid black`,
+        border: `1.1px solid rgb(195, 212, 229)`,
         borderRadius: `20px 0px 20px 0px`,
-        backgroundColor: `rgb(232, 229, 229)`,
+        backgroundColor: `rgb(239, 247, 255)`,
     },
     title:{
         textDecoration: `overline underline`,
+        opacity: `1`,
+        color: `rgb(195, 212, 229)`,
         margin: `auto`,
         fontSize: `300%`,
-        marginTop: `50px`,
-        marginBottom: `50px`,
+        marginTop: `70px`,
+        marginBottom: `30px`,
         fontFamily:`helvetica`
     }
 

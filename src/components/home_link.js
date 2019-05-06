@@ -10,21 +10,22 @@ export default () =>
                     //textDecoration: `underline`,
                     //backgroundColor: `black`, 
                     cursor:`pointer`,
-                    fontSize:`300%`,
                     transitionDuration: `0.5s`,
+                    color: `rgb(255, 132, 132)`,
+                    opacity: `1`,
                     
                 },
                 fontSize:`200%`,
                 color:`black`,
-                backgroundColor:`white`,
-                transitionDuration: `0.2s`,
+                transitionDuration: `0.5s`,
+                opacity: `.3`,                
             }}
             onClick = { event => {
                 event.preventDefault()
                 navigate("/")
             }}
             >
-            NathanBrown.com
+            Nathan Brown
             </div>
         </div>
     )

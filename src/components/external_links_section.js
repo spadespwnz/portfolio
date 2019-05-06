@@ -5,6 +5,6 @@ export default () => (
         <p>Github</p>
         <p>LinkedIn</p>
         <p>Resume</p>
-        <p>Email</p>
+        <a href="mailto:NathanBrownDev@gmail.com" css={{textDecoration: `underline`, color: `rgb(255, 132, 132)`}}>NathanBrownDev@gmail.com</a>
     </div>
 )
