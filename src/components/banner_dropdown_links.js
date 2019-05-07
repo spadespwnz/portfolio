@@ -2,7 +2,6 @@ import React from "react"
 import DropdownLink from "./dropdown_link"
 import styles from "../styles/css_in_js"
 import "../styles/banner_dropdown_link.css"
-import { navigate} from "gatsby"
 
 export default (props) => (
         <div className="dropdown" css={styles.banner_link}>

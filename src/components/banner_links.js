@@ -2,7 +2,7 @@ import React from "react"
 import BannerLink from "./banner_link"
 import BannerDropdown from "./banner_dropdown_links"
 export default () => (
-    <div style={{display: `flex`, alignItems: `right`, float: `right`, height:`100%`}}>
+    <div style={{display: `flex`, alignItems: `right`, height:`100%`}}>
         <BannerLink pageName="xi:Bound" url="xibound" />
         <BannerLink pageName="PicHunt" url="pichunt" />
         <BannerLink pageName="Arduino Midi Player" url="arduino_midi" />
