@@ -5,8 +5,8 @@
   "version": "0.1.0",
   "license": "MIT",
   "engines": {
-    "node":"10.15.3",
-    "npm":"6.4.1"
+    "node": "10.15.3",
+    "npm": "6.4.1"
   },
   "scripts": {
     "build": "gatsby build",
@@ -27,6 +27,7 @@
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
+    "@babel/parser": "^7.4.4",
     "prettier": "^1.17.0"
   },
   "repository": {
