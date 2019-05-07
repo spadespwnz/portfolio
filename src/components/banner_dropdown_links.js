@@ -4,7 +4,7 @@ import styles from "../styles/css_in_js"
 import "../styles/banner_dropdown_link.css"
 
 export default (props) => (
-        <div className="dropdown" css={styles.banner_link}>
+        <div className="dropdown" css={styles.dropdown_link}>
             <div css={{width:`100%`,height:`100%`, display:`flex`,justifyContent:`center`,alignItems:`center`, flexDirection: `column`}}>
                 <p css={{margin:`0`}}>{props.name}
                 </p>
