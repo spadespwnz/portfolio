@@ -9,7 +9,7 @@ export default (props) => (
                 <p css={{margin:`0`}}>{props.name}
                 </p>
                 <p css={{height: `0%`,margin: `0`}}>
-                <div css={{
+                <span css={{
                     display:`block`,
                     margin: `10px`,
                     width: `0`,

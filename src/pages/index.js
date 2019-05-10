@@ -63,8 +63,9 @@ export default () => (
                 </p>
                 <p>
                     <a href="mailto:NathanBrownDev@gmail.com" css={{textDecoration: `underline`, color: `rgb(255, 132, 132)`}}>NathanBrownDev@gmail.com</a>
-                    <p><Link to="/resume.pdf">Resume</Link></p>
                 </p>
+                    <Link to="/resume.pdf">Resume</Link>
+                
             </Content>
             <External />
             <Footer />

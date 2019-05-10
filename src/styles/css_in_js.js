@@ -18,6 +18,7 @@ module.exports = {
         margin:`0`, 
         padding:`0`, 
         textAlign:`center`,
+        "@media all and (max-width: 1450px)":{display: `none`},
     },
     dropdown_link:{
         ':hover': {
@@ -39,6 +40,9 @@ module.exports = {
         margin:`0`, 
         padding:`0`, 
         textAlign:`center`,
+        float: `left`,
+        display: `block`,
+        "@media all and (max-width: 975px)":{display: `none`},
     },
     dropdown_item:{
         display: `flex`,
@@ -53,9 +57,10 @@ module.exports = {
         }
     },
     page_content:{
+        "@media all and (max-width: 800px)":{maxWidth: `90%`},
         display: `inline-block`,
-        width:`800px`,
-        margin: `0`,
+        maxWidth:`800`,
+        margin: `10px`,
         marginTop: `50px`,
         backgroundColor: `white`,
         whiteSpace: `pre-line`,
@@ -72,13 +77,16 @@ module.exports = {
         border: `1.1px solid rgb(195, 212, 229)`,
         borderRadius: `20px 0px 20px 0px`,
         backgroundColor: `rgb(239, 247, 255)`,
+        position: 'fixed',
+        right: `0`,
+        bottom: `0`,
     },
     title:{
         textDecoration: `overline underline`,
         opacity: `1`,
         color: `rgb(195, 212, 229)`,
         margin: `auto`,
-        fontSize: `300%`,
+        fontSize: `2.5em`,
         marginTop: `70px`,
         marginBottom: `30px`,
         fontFamily:`helvetica`

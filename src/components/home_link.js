@@ -2,9 +2,10 @@ import React from "react"
 import { navigate} from "gatsby"
 export default () => 
     (
-        <div style={{display: `flex`, alignItems: `left`, float: `left`, height:`100%`, width:`300px`,}}>
-            <div style={{display: `flex`, justifyContent:`center`, alignItems:`center`, height:`100%`, width:`300px`, margin:`0`, padding:`0`, textAlign:`center`,
+        <div style={{display: `flex`, alignItems: `left`, float: `left`, height:`100%`, marginRight: `-1000px`}}>
+            <div style={{display: `flex`, justifyContent:`center`, alignItems:`center`, height:`100%`, margin:`0`, padding:`0`, textAlign:`center`,
             }}
+            
             css={{
                 ':hover': {
                     //textDecoration: `underline`,
@@ -15,16 +16,23 @@ export default () =>
                     opacity: `1`,
                     
                 },
-                fontSize:`200%`,
+                fontSize:`30px`,
                 color:`black`,
                 transitionDuration: `0.5s`,
-                opacity: `.3`,                
+                opacity: `.5`,                
             }}
             onClick = { event => {
                 event.preventDefault()
                 navigate("/")
             }}
             >
+             <img css={{':hover':{
+
+                },
+                marginRight: `10px`,
+                height: `80%`,
+                 transitionDuration: `2s`,
+                 borderRadius: `50%`}} src={'img/profile.jpg'} />
             Nathan Brown
             </div>
         </div>
