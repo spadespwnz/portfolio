@@ -13,10 +13,12 @@
     cursor: pointer;
     transition: 1s;
     right: 0;
-    background-color: rgba(255, 132, 132,0.5);
 }
 .mobile-list-item {
-    font-size:1.5em;
+    color: rgb(173,173,173);
+    font-size:1.25em;
+    margin-left:20px;
+    border-bottom: 1px solid black;
 }
 
 #menuToggle
@@ -79,6 +81,7 @@
   transform-origin: 0% 100%;
 }
 
+
 /* 
  * Transform all the slices of hamburger
  * into a crossmark.
@@ -105,4 +108,25 @@
 #menuToggle input:checked ~ span:nth-last-child(2)
 {
   transform: rotate(-45deg) translate(0, -1px);
+}
+
+#mobile-links{
+    /*
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    animation: slide-in 0.5s forwards;
+    -webkit-animation: slide-in 0.5s forwards;
+    */
+    animation: fadein 0.5s;
+    -webkit-animation: fadein 0.5s;
+    opacity: .97;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: .97; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: .97; }
 }

@@ -10,6 +10,9 @@ import { Link } from "gatsby"
 export default () => (
         <div >
             <Banner />
+            
+            
+            
             <Content>
                 <Title title="ABOUT" />
                 <p>
@@ -22,11 +25,17 @@ export default () => (
                 <p>
                 Currently I reside in Thunder Bay, Ontario, yet am open to relocating for a job opportuniy. I am a full Canadian citizen looking for employement as a developer within Canada.
                 </p>
+                
+                    
                 <Title title="RECENT PROJECTS" />
                 <div css={{textAlign: `center`,display: `block`}}>
+
+                
+                    
                     <Image imgUrl="midi-1.jpg" hoverUrl="midi-5.gif" url="arduino_midi" >
                         test
                     </Image>
+                    
                     <Image imgUrl="spadestools-8.png" hoverUrl="spadestools-3.gif">
                         Spades Tools for SA2B
                     </Image>
@@ -36,7 +45,6 @@ export default () => (
                     <Image imgUrl="vote-3.png" hoverUrl="vote-2.gif">
                         test
                     </Image>
-                    
 
                 </div>
                 <Title title="SKILLS" />
@@ -56,6 +64,8 @@ export default () => (
                     Bootstrap; Paradigms and Methodoligies: CSS in JS, RESTful APIs, MVC, JWT, OAuth; Databases and In-Memory Database: Mongodb, DynamoDB, SQLite, MariaDB, Redis; Web Technologies such as Web Sockets, Location, Notifications;
                     Developement tools: NPM, webpack, Gatsby, Jenkins, git, DevTools; Cloud Providers: Amazon AWS, Heroku; and Developement Suites: Unity, Android Studio.
                 </p>
+                
+                
                 <Title title="HIRE" />
                 <p>
                     As a dedicated, knowledgable and systematic software developer, I can help bring any project to life. I would love the opportunity
@@ -67,6 +77,8 @@ export default () => (
                     <Link to="/resume.pdf">Resume</Link>
                 
             </Content>
+            
+            
             <External />
             <Footer />
         </div>

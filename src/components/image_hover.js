@@ -22,14 +22,12 @@ export default (props) => (
                 ':hover':{
                     cursor:`pointer`,
                     border: `2px solid rgb(255, 132, 132)`
-                }}}>
+                },
+                "@media all and (max-width: 600px)":{marginLeft: `0px`, marginRight: `0px`},}}>
             {props.children}
             <img css={{width: `100%`, height: `100%`,top:`0`,left:`0`,position:`absolute`,
                 transitionDuration: `2s`,
-            }} src={'img/ss/'+props.hoverUrl} 
-        //onMouseOver={(e) => hover(e,'img/ss/'+props.hoverUrl)}
-        //onMouseOut={(e) => hover(e, 'img/ss/'+props.imgUrl)} 
-        />
+            }} src={'img/ss/'+props.hoverUrl} />
 
        
         <img css={{width: `100%`, height: `100%`,top:`0`,left:`0`,position:`absolute`, backgroundColor:`white`,

@@ -8,7 +8,13 @@ export default () => {
     const [initialized, setInitialized ] = useState(false);
     let refValue = useRef(mobileListVisible);
     function handleClick(e){
-        const target = e.target.parentElement.parentElement;
+        let target;
+        try{
+            target = e.target.parentElement.parentElement;
+        }
+        catch{
+            return;
+        }
         const linkList = document.getElementById('mobile-links')
         if (target != linkList){
 
@@ -42,7 +48,7 @@ export default () => {
             <BannerLink pageName="Arduino Midi Player" url="arduino_midi" />
             <BannerLink pageName="SPaDeS Tools" url="spades_tools" />
             <div css={{
-                "@media all and (min-width: 1450px)":{display:`none`},
+                "@media all and (min-width: 1451px)":{display:`none`},
                 //"@media all and (max-width: 1450px)":{display:`none`},
                 }}>
                     
@@ -71,26 +77,33 @@ export default () => {
                                                 {name:"Arduino Motor Controller",url:"arduino_motor"},
                                                 {name:"SPaDeS Tools Race Server", url:"race_server"}]}
                                             />
-            <div css={{"@media all and (min-width: 975px)":{display:`none`}, display:`block`, position:`relative`,
-                zIndex:`2`}}>
+            <div css={{"@media all and (min-width: 976px)":{display:`none`}, display:`block`, position:`relative`, 
+                zIndex:`3`}}>
                 <div css={{
                     display:`flex`, alignItems:`center`,justifyContent:`center`,marginRight:`10px`,marginLeft:`auto`,height:`100%`, width:`34px`,
                     
                 }}
                 onClick={  () => {  toggleMobileList(!mobileListVisible) } }>
+                    
                     <div id="menuToggle" css={{color:`red`, display:`block`}}>
-                        <input type="checkbox" />
+                    
+                    {mobileListVisible ? <input type="checkbox" checked /> : <input type="checkbox" />}
+                        
                         <span></span>
                         <span></span>
                         <span style={{marginBottom:`0px`}}></span>
                         <div></div>
+                        
                     </div>
                 
                 </div>
                 {mobileListVisible && 
-                    <div id="mobile-links" css={{position:`relative`, display: `block`, width:`100%`, backgroundColor: `rgb(32, 50, 79)`, color:`rgb(232, 232, 232)`,textAlign:`left`}}>
-                        <ul css={{marginBlockStart:`0`, marginBlockEnd:`0`, lineHeight:`2`,
-                                 listStyleType: `none`, padding:`5px`}}>
+                    <div id="mobile-links"  css={{
+                        position:`relative`, display: `block`, width:`100vw`,
+                        backgroundColor: `rgb(32, 50, 79)`, color:`rgb(232, 232, 232)`, marginRight: `0vw`,
+                        textAlign:`left`}}>
+                        <ul css={{marginBlockStart:`0`, marginBlockEnd:`0`, lineHeight:`2.5`, fontSize: `1em`,
+                                 listStyleType: `none`, marginLeft:`0px`,paddingTop: `20px`, paddingLeft:`0px`, fontWeight: `300`}}>
 
                             <li className="mobile-list-item" onClick={e => {navigate("")}}>
                                 xi:Bound

@@ -14,11 +14,11 @@ export default () => (
             paddingTop:`50px`,
             alignItems:`left`,
             textAlign:`left`,
-            '@media (min-width: 1200px)': {width: `1200px`},
+            '@media all and (min-width: 1200px)': {width: `1200px`},
 
 
         }}>
-            <div css={{width:`300px`}}>
+            <div css={{width:`300px`, "@media all and (max-width: 800px)":{ marginLeft: `20px`}}}>
                 <p css={{fontSize:'20',marginBlockEnd: `0.3em`}}>
                 Nathan Brown
                 </p>
@@ -27,7 +27,7 @@ export default () => (
                     Feel free to send me an email with any questions, concerns, or opportunities.
                 </p>
             </div>
-            <div css={{width:`300px`}}>
+            <div css={{width:`300px`, "@media all and (max-width: 800px)":{textAlign:`right`, marginRight: `20px`},}}>
                 <p css={{fontSize:'20',marginBlockEnd: `0.3em`}}>
                 Online
                 </p>
