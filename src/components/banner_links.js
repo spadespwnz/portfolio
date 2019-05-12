@@ -5,8 +5,6 @@ import { navigate} from "gatsby"
 
 export default () => {
     const [mobileListVisible, toggleMobileList] = useState(false);
-    const [initialized, setInitialized ] = useState(false);
-    let refValue = useRef(mobileListVisible);
     function handleClick(e){
         let target;
         try{
@@ -18,28 +16,19 @@ export default () => {
         const linkList = document.getElementById('mobile-links')
         if (target != linkList){
 
-            if (refValue.current){
+            if (mobileListVisible){
                 toggleMobileList(false)
             }
         }
     }
-    useEffect(
-        () =>{
-            refValue.current = mobileListVisible;
 
-        },
-        [mobileListVisible]
-    )
     useEffect(() =>{
-    
-        if (!initialized){
-            window.addEventListener('click',handleClick)
-            setInitialized(true)
-        }
+        window.addEventListener('click',handleClick)
+
         return () =>{
             window.removeEventListener('click', handleClick)
         } 
-    }, [])
+    }, [mobileListVisible])
     return (
     <div style={{display: `flex`, alignItems: `right`, height:`100%`}}>
 
