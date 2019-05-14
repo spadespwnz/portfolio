@@ -1,6 +1,7 @@
 import React from "react"
 import BannerLinks from "./banner_links"
 import HomeLink from "./home_link"
+import {Helmet} from "react-helmet"
 export default () => 
     (
         <div css={{ 
