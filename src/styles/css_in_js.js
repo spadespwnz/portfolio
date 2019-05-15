@@ -58,8 +58,8 @@ module.exports = {
     },
     page_content:{
         "@media all and (max-width: 800px)":{maxWidth: `90%`},
+        minHeight: `70vh`,
         display: `inline-block`,
-        maxWidth:`800`,
         margin: `10px`,
         marginTop: `50px`,
         backgroundColor: `white`,

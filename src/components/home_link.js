@@ -32,7 +32,7 @@ export default () =>
                 marginRight: `10px`,
                 height: `80%`,
                  transitionDuration: `2s`,
-                 borderRadius: `50%`}} src={'img/profile.jpg'} />
+                 borderRadius: `50%`}} src={'/img/profile.jpg'} />
             Nathan Brown
             </div>
         </div>

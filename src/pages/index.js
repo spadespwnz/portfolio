@@ -7,7 +7,7 @@ import { Link } from "gatsby"
 export default () => (
     <div >
  
-        <PageTemplate>
+        <PageTemplate sidebar={false} width="800px">
             <Title title="ABOUT" />
             <p>
             I'm a software developer that enjoys working on any project, from microcontrollers to mobile applications.
@@ -27,17 +27,16 @@ export default () => (
             
                 
                 <Image imgUrl="midi-1.jpg" hoverUrl="midi-5.gif" url="arduino_midi" >
-                    test
                 </Image>
                 
                 <Image imgUrl="spadestools-8.png" hoverUrl="spadestools-3.gif">
-                    Spades Tools for SA2B
                 </Image>
-                <Image imgUrl="xi-1.png" hoverUrl="xi-2.gif">
-                    test
-                </Image>
+                
+                <Link to="/xibound/">
+                    <Image imgUrl="xi-1.png" hoverUrl="xi-2.gif">
+                    </Image>
+                </Link>
                 <Image imgUrl="vote-3.png" hoverUrl="vote-2.gif">
-                    test
                 </Image>
 
             </div>

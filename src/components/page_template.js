@@ -24,10 +24,10 @@ export default (props) => {
         <Helmet>
           <meta charSet="utf-8" />
           <title>{data.site.siteMetadata.title}</title>
-          <link rel="canonical" href={data.site.siteMetadata.siteUrl} />
+          <link rel="icon" href="/favicon.ico" type="image/png" sizes="16x16" />
         </Helmet>
         <Banner />
-        <Content >
+        <Content sidebar={props.sidebar} width={props.width}>
             {props.children}
         </Content>
         <External />
