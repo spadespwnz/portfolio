@@ -23,6 +23,7 @@ export default (props) => {
         
         <Helmet>
           <meta charSet="utf-8" />
+          <meta name="google-site-verification" content="hi6407zDHiOyWtcCAK6CRIRwY2KVlL1oFK1A9tYkZYA" />
           <title>{data.site.siteMetadata.title}</title>
           <link rel="icon" href="/favicon.ico" type="image/png" sizes="16x16" />
         </Helmet>
