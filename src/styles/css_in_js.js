@@ -57,7 +57,7 @@ module.exports = {
         }
     },
     page_content:{
-        "@media all and (max-width: 800px)":{maxWidth: `90%`},
+        
         minHeight: `70vh`,
         display: `inline-block`,
         margin: `10px`,

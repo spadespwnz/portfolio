@@ -3,8 +3,8 @@ import Sidebar from "../components/sidebar"
 import Project from "../components/project_info"
 import PageTemplate from "../components/page_template"
 import ImageText from "../components/ImageText"
-import { Link } from "gatsby"
-export default () => (
+import { Link, graphql} from "gatsby"
+export default ({data}) => (
     <div>
         <PageTemplate sidebar={true} width="1000px">
             <Sidebar title="PicHunt">
@@ -38,19 +38,19 @@ export default () => (
                 When pictures are uploaded, they are added to an AWS S3 bucket that has an attached Lambda function to create a thumbnail; and when pictures are loaded they are cached
                 onto the device. This minimizes the amount of data consumed while using the app.
             </p>
-            <ImageText imgUrl="/img/pichunt/gif2.gif" mirror={true}>
+            <ImageText imgUrl="/vid/pichunt/demo2.webm" video={true} mirror={true}>
                    Adding a picture is as simple as selecting the new picture icon from the gallery page, taking a picture, and uploading it.
                    This instantly adds it to the users picture gallery, and it will start appearing for other users searching for Hunts. 
                    <p>
-                   <i css={{fontSize:`.5em`}}>This GIF is highly compressed to lower data usage.</i>
+                   <i css={{fontSize:`.5em`}}>This video is highly compressed to lower data usage.</i>
                    </p>
             </ImageText>
-            <ImageText imgUrl="/img/pichunt/gif1.gif" mirror={false}>
+            <ImageText imgUrl="/vid/pichunt/demo1.webm" video={true} mirror={false}>
                 When accessing the Hunts tab, all nearby hunts, within 5km, will be listed. Once the user is within 20 meters from where the picture was taken,
                 the user is able to "Collect" it. This moves the hunt to the Collected tab of the gallery. The specific design is just implemented for testing, as this 
                 a work in progress.
                 <p>
-                   <i css={{fontSize:`.5em`}}>This GIF is highly compressed to lower data usage.</i>
+                   <i css={{fontSize:`.5em`}}>This video is highly compressed to lower data usage.</i>
                    </p>
             </ImageText>
             <p>
@@ -58,7 +58,7 @@ export default () => (
                 I personally found those sorts of puzzles fun, and realized that a similar idea could exist in the real world.
                 This app is designed to give people an activity to do while out and about, and lead people to interesting places they might otherwise miss out on.
             </p>
-            <ImageText imgUrl="/img/pichunt/ss1.png" mirror={false}>
+            <ImageText fluid={data.pic1.childImageSharp.fluid} mirror={false}>
                 Because this is designed to be used while outside, the data usage must be kept as minimal as possible. This is achieved by showing only a thumbnail of the picture whenever 
                 possible, and only loading the full picture when the user opens the full image. All the images are cached once they are loaded, so reloading the app, or individual screens, 
                 does not force the image to be downloaded again.
@@ -68,3 +68,17 @@ export default () => (
 
     </div>
 )
+
+export const query = graphql`
+  query {
+    pic1: file(relativePath: { eq: "pichunt/1.png" }) {
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        # Makes it trivial to update as your page's design changes.
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        }
+      }
+    }
+  }
+`

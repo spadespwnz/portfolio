@@ -3,8 +3,10 @@ import Title from "../components/title"
 import SkillBlock from "../components/skill_block"
 import Image from "../components/image_hover"
 import PageTemplate from "../components/page_template"
-import { Link } from "gatsby"
-export default () => (
+import { Link,graphql} from "gatsby"
+
+
+export default ({data}) => (
     <div >
  
         <PageTemplate sidebar={false} width="800px">
@@ -26,17 +28,17 @@ export default () => (
 
             
                 
-                <Image imgUrl="midi-1.jpg" hoverUrl="midi-5.gif" url="arduino_midi" >
+                <Image hoverUrl="vid/midi1.webm" fluid={data.midi1.childImageSharp.fixed}>
                 </Image>
                 
-                <Image imgUrl="spadestools-8.png" hoverUrl="spadestools-3.gif">
+                <Image hoverUrl="vid/spadestools1.webm" fluid={data.spadestools.childImageSharp.fixed}>
                 </Image>
                 
                 <Link to="/xibound/">
-                    <Image imgUrl="xi-1.png" hoverUrl="xi-2.gif">
+                    <Image hoverUrl="vid/xi1.webm" fluid={data.xibound.childImageSharp.fixed}>
                     </Image>
                 </Link>
-                <Image imgUrl="vote-3.png" hoverUrl="vote-2.gif">
+                <Image hoverUrl="vid/vote1.webm" fluid={data.vote.childImageSharp.fixed}>
                 </Image>
 
             </div>
@@ -71,3 +73,44 @@ export default () => (
         </PageTemplate>
     </div>
 )
+
+export const query = graphql`
+  query {
+    midi1: file(relativePath: { eq: "midi-2.jpg" }) {
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        # Makes it trivial to update as your page's design changes.
+        fixed(width: 300, height: 300) {
+          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+        }
+      }
+    },
+    spadestools: file(relativePath: { eq: "spadestools-logo.png" }) {
+        childImageSharp {
+          # Specify the image processing specifications right in the query.
+          # Makes it trivial to update as your page's design changes.
+          fixed(width: 300, height: 300) {
+            ...GatsbyImageSharpFixed_withWebp_tracedSVG
+          }
+        }
+    },
+    xibound: file(relativePath: { eq: "xibound-logo.png" }) {
+        childImageSharp {
+          # Specify the image processing specifications right in the query.
+          # Makes it trivial to update as your page's design changes.
+          fixed(width: 300, height: 300) {
+            ...GatsbyImageSharpFixed_withWebp_tracedSVG
+          }
+        }
+    },
+    vote: file(relativePath: { eq: "vote.png" }) {
+        childImageSharp {
+          # Specify the image processing specifications right in the query.
+          # Makes it trivial to update as your page's design changes.
+          fixed(width: 300, height: 300) {
+            ...GatsbyImageSharpFixed_withWebp_tracedSVG
+          }
+        }
+    },
+  }
+`
