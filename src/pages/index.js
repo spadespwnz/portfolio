@@ -27,9 +27,10 @@ export default ({data}) => (
             <div css={{textAlign: `center`,display: `block`}}>
 
             
-                
-                <Image hoverUrl="vid/midi1.webm" fluid={data.midi1.childImageSharp.fixed}>
-                </Image>
+                <Link to="/arduino/">
+                    <Image hoverUrl="vid/midi1.webm" fluid={data.midi1.childImageSharp.fixed}>
+                    </Image>
+                </Link>
                 
                 <Image hoverUrl="vid/spadestools1.webm" fluid={data.spadestools.childImageSharp.fixed}>
                 </Image>
@@ -38,6 +39,7 @@ export default ({data}) => (
                     <Image hoverUrl="vid/xi1.webm" fluid={data.xibound.childImageSharp.fixed}>
                     </Image>
                 </Link>
+
                 <Image hoverUrl="vid/vote1.webm" fluid={data.vote.childImageSharp.fixed}>
                 </Image>
 

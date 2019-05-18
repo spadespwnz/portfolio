@@ -34,7 +34,7 @@ export default () => {
 
             <BannerLink pageName="xi:Bound" url="xibound" />
             <BannerLink pageName="PicHunt" url="pichunt" />
-            <BannerLink pageName="Arduino Midi Player" url="arduino_midi" />
+            <BannerLink pageName="Arduino Midi Player" url="arduino" />
             <BannerLink pageName="SPaDeS Tools" url="spades_tools" />
             <div css={{
                 "@media all and (min-width: 1451px)":{display:`none`},
@@ -44,7 +44,7 @@ export default () => {
                 <BannerDropdown name="Featured" items={[{
                                                 name:"xi:Bound",url:"xibound"},
                                                 {name:"PicHunt", url:"pichunt"},
-                                                {name:"Arduino Midi Player",url:"arduino_midi"},
+                                                {name:"Arduino Midi Player",url:"arduino"},
                                                 {name:"SPaDeS Tools", url:"spades_tools"} ]} />
             </div>
             <BannerDropdown name="Work In Progress" items={[{
