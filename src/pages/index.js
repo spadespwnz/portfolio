@@ -4,13 +4,14 @@ import SkillBlock from "../components/skill_block"
 import Image from "../components/image_hover"
 import PageTemplate from "../components/page_template"
 import { Link,graphql} from "gatsby"
-
+import Img from "gatsby-image"
 
 export default ({data}) => (
     <div >
  
         <PageTemplate sidebar={false} width="800px">
             <Title title="ABOUT" />
+            <Img fluid={data.me_pic.childImageSharp.fluid} />
             <p>
             I'm a software developer that enjoys working on any project, from microcontrollers to mobile applications.
             Having worked on a variety of projects, I've gained experience with many different languages, frameworks and paradigms, and can quickly learn new tools as needed.
@@ -111,6 +112,13 @@ export const query = graphql`
           # Makes it trivial to update as your page's design changes.
           fixed(width: 300, height: 300) {
             ...GatsbyImageSharpFixed_withWebp_tracedSVG
+          }
+        }
+    },
+    me_pic: file(relativePath: { eq: "me-pic.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
           }
         }
     },

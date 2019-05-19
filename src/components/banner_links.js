@@ -94,15 +94,15 @@ export default () => {
                         <ul css={{marginBlockStart:`0`, marginBlockEnd:`0`, lineHeight:`2.5`, fontSize: `1em`,
                                  listStyleType: `none`, marginLeft:`0px`,paddingTop: `20px`, paddingLeft:`0px`, fontWeight: `300`}}>
 
-                            <li className="mobile-list-item" onClick={e => {navigate("")}}>
+                            <li className="mobile-list-item" onClick={e => {navigate("xibound")}}>
                                 xi:Bound
                             </li>
-                            <li className="mobile-list-item" onClick={e => {navigate("")}}>
+                            <li className="mobile-list-item" onClick={e => {navigate("pichunt")}}>
                                 [WIP] PicHunt
                             </li><li className="mobile-list-item" onClick={e => {navigate("")}}>
                                 SPaDeS Tools
                             </li>
-                            <li className="mobile-list-item" onClick={e => {navigate("")}}>
+                            <li className="mobile-list-item" onClick={e => {navigate("arduino")}}>
                                 Arduino Midi Player
                             </li>
                             <li className="mobile-list-item" onClick={e => {navigate("")}}>
