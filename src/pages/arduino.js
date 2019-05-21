@@ -88,7 +88,15 @@ export default ({data}) => (
                 For one, The Arduino simply isn't powerful enough to do the sine calculations required in real time. I created a lookup table for sine values to increase the speed, but 
                 this loses out on accuracy. The Arduino clock speed is not fast enough to get the toggling speed required for accuracy in the volume being output. To get successful results
                 I had to choose notes that had strong interference as to have large enough changes in volume throughout each period of the wave.
-
+            </p>
+            <div>
+                <Img css={{width:`33%`, display:`inline-block`, margin:`auto`}}fluid={data.spectrum1.childImageSharp.fluid} />
+                <Img css={{width:`33%`, display:`inline-block`, margin:`auto`}}fluid={data.spectrum2.childImageSharp.fluid} />
+                <Img css={{width:`33%`, display:`inline-block`, margin:`auto`}}fluid={data.spectrum3.childImageSharp.fluid} />
+            </div>
+            <p>
+                The left image and center image both show the buzzer playing one individual note, then the rightmost image shows the spectogram of the buzzer playing both notes at the 
+                same time. 
             </p>
         </Project>
     </PageTemplate>
@@ -133,6 +141,33 @@ export const query = graphql`
         }
       },
       diagram5: file(relativePath: { eq: "arduino/diagram5.png" }) {
+        childImageSharp {
+          # Specify the image processing specifications right in the query.
+          # Makes it trivial to update as your page's design changes.
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          }
+        }
+      },
+      spectrum1: file(relativePath: { eq: "arduino/1.jpg" }) {
+        childImageSharp {
+          # Specify the image processing specifications right in the query.
+          # Makes it trivial to update as your page's design changes.
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          }
+        }
+      },
+      spectrum2: file(relativePath: { eq: "arduino/2.jpg" }) {
+        childImageSharp {
+          # Specify the image processing specifications right in the query.
+          # Makes it trivial to update as your page's design changes.
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          }
+        }
+      },
+      spectrum3: file(relativePath: { eq: "arduino/3.jpg" }) {
         childImageSharp {
           # Specify the image processing specifications right in the query.
           # Makes it trivial to update as your page's design changes.
