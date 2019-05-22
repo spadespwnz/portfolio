@@ -98,6 +98,7 @@ export default ({data}) => (
                 The left image and center image both show the buzzer playing one individual note, then the rightmost image shows the spectogram of the buzzer playing both notes at the 
                 same time. 
             </p>
+            
         </Project>
     </PageTemplate>
 )
