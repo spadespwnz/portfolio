@@ -35,7 +35,7 @@ export default () => {
             <BannerLink pageName="xi:Bound" url="xibound" />
             <BannerLink pageName="PicHunt" url="pichunt" />
             <BannerLink pageName="Arduino Midi Player" url="arduino" />
-            <BannerLink pageName="SPaDeS Tools" url="spades_tools" />
+            <BannerLink pageName="SPaDeS Tools" url="spadestools" />
             <div css={{
                 "@media all and (min-width: 1451px)":{display:`none`},
                 //"@media all and (max-width: 1450px)":{display:`none`},
@@ -45,7 +45,7 @@ export default () => {
                                                 name:"xi:Bound",url:"xibound"},
                                                 {name:"PicHunt", url:"pichunt"},
                                                 {name:"Arduino Midi Player",url:"arduino"},
-                                                {name:"SPaDeS Tools", url:"spades_tools"} ]} />
+                                                {name:"SPaDeS Tools", url:"spadestools"} ]} />
             </div>
             <BannerDropdown name="Work In Progress" items={[{
                                                 name:"Alexandria",url:"alexandria"},
@@ -99,7 +99,7 @@ export default () => {
                             </li>
                             <li className="mobile-list-item" onClick={e => {navigate("pichunt")}}>
                                 [WIP] PicHunt
-                            </li><li className="mobile-list-item" onClick={e => {navigate("")}}>
+                            </li><li className="mobile-list-item" onClick={e => {navigate("spadestools")}}>
                                 SPaDeS Tools
                             </li>
                             <li className="mobile-list-item" onClick={e => {navigate("arduino")}}>

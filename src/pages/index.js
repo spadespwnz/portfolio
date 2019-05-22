@@ -32,9 +32,11 @@ export default ({data}) => (
                     <Image hoverUrl="vid/midi1.webm" fluid={data.midi1.childImageSharp.fixed}>
                     </Image>
                 </Link>
-                
-                <Image hoverUrl="vid/spadestools1.webm" fluid={data.spadestools.childImageSharp.fixed}>
-                </Image>
+
+                <Link to="/spadestools/">
+                    <Image hoverUrl="vid/spadestools1.webm" fluid={data.spadestools.childImageSharp.fixed}>
+                    </Image>
+                </Link>
                 
                 <Link to="/xibound/">
                     <Image hoverUrl="vid/xi1.webm" fluid={data.xibound.childImageSharp.fixed}>
