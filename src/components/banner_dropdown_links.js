@@ -23,7 +23,7 @@ export default (props) => (
             
             <div  className="dropdown-menu">
                 {props.items.map((item,i) => {
-                    return (<DropdownLink name={item.name} key={item.url}/>)
+                    return (<DropdownLink name={item.name} url={item.url} key={item.url}/>)
                 })}
 
                 

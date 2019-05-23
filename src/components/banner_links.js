@@ -59,7 +59,7 @@ export default () => {
 
             <BannerDropdown name="Other" items ={[{
                                                 name:"BFAssist", url:"bfassist"},
-                                                {name:"Twitch Overlay",url:"twitch_overlay"},
+                                                {name:"Twitch Overlay",url:"polls"},
                                                 {name:"Streaming Suite",url:"stream"},
                                                 {name:"Study Notifications (Gomain3)", url:"study"},
                                                 {name:"Various Simple Webapps (chat/lists/images/etc)", url:"webapp"},
@@ -105,7 +105,7 @@ export default () => {
                             <li className="mobile-list-item" onClick={e => {navigate("arduino")}}>
                                 Arduino Midi Player
                             </li>
-                            <li className="mobile-list-item" onClick={e => {navigate("")}}>
+                            <li className="mobile-list-item" onClick={e => {navigate("polls")}}>
                                 Twitch Overlay
                             </li>
                             <li className="mobile-list-item" onClick={e => {navigate("")}}>

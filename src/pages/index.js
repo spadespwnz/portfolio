@@ -42,9 +42,10 @@ export default ({data}) => (
                     <Image hoverUrl="vid/xi1.webm" fluid={data.xibound.childImageSharp.fixed}>
                     </Image>
                 </Link>
-
-                <Image hoverUrl="vid/vote1.webm" fluid={data.vote.childImageSharp.fixed}>
-                </Image>
+                <Link to="/polls/">
+                    <Image hoverUrl="vid/vote1.webm" fluid={data.vote.childImageSharp.fixed}>
+                    </Image>
+                </Link>
 
             </div>
             <Title title="SKILLS" />

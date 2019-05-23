@@ -3,6 +3,7 @@ import Sidebar from "../components/sidebar"
 import Project from "../components/project_info"
 import PageTemplate from "../components/page_template"
 import ImageText from "../components/ImageText"
+import Img from "gatsby-image"
 import { Link, graphql} from "gatsby"
 export default ({data}) => (
     <div>
@@ -25,7 +26,7 @@ export default ({data}) => (
             </Sidebar>
             <Project>
             
-            <img css={{width:`100%`}} src="/img/pichunt_logo2.png"></img>
+            <Img fluid={data.logo.childImageSharp.fluid}></Img>
             <h2 css={{textAlign: `center`, opacity:`.5`}}>
                 Under Developement
             </h2>
@@ -58,7 +59,7 @@ export default ({data}) => (
                 I personally found those sorts of puzzles fun, and realized that a similar idea could exist in the real world.
                 This app is designed to give people an activity to do while out and about, and lead people to interesting places they might otherwise miss out on.
             </p>
-            <ImageText fluid={data.pic1.childImageSharp.fluid} mirror={false}>
+            <ImageText fluid={data.pic1.childImageSharp.fluid} mirror={true}>
                 Because this is designed to be used while outside, the data usage must be kept as minimal as possible. This is achieved by showing only a thumbnail of the picture whenever 
                 possible, and only loading the full picture when the user opens the full image. All the images are cached once they are loaded, so reloading the app, or individual screens, 
                 does not force the image to be downloaded again.
@@ -79,6 +80,15 @@ export const query = graphql`
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
-    }
+    },
+    logo: file(relativePath: { eq: "pichunt_logo2.png" }) {
+        childImageSharp {
+          # Specify the image processing specifications right in the query.
+          # Makes it trivial to update as your page's design changes.
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          }
+        }
+      }
   }
 `
