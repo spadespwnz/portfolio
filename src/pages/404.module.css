@@ -1,0 +1,21 @@
+.letter{
+    width: 50px;
+    text-align: center;
+}
+.firstLetter{
+    animation: grow 6s infinite 0s reverse;
+}
+.secondLetter{
+    animation: grow 4s infinite 2s reverse;
+}
+.thirdLetter{
+    animation: grow 3s infinite 4s reverse;
+}
+@keyframes grow{
+    0%, 100%{
+        font-size: 5px;
+    }
+    50%{
+        font-size: 150px;
+    }
+}
