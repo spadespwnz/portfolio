@@ -2,7 +2,7 @@ import React from "react"
 import Sidebar from "../components/sidebar"
 import Project from "../components/project_info"
 import PageTemplate from "../components/page_template"
-import styles from "../pages/404.module.css"
+import styles from "../pages/error404.module.css"
 export default () => (
     <div>
         <PageTemplate sidebar={false} width="1000px">
