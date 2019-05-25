@@ -32,7 +32,6 @@ module.exports = {
         },
         transitionDuration: `0.2s`,
         position: `relative`,
-        display: `inline-block`, 
         justifyContent:`center`, 
         alignItems:`center`, 
         height:`100%`,

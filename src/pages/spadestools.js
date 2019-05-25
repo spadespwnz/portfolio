@@ -3,7 +3,6 @@ import Sidebar from "../components/sidebar"
 import Project from "../components/project_info"
 import PageTemplate from "../components/page_template"
 import ImageText from "../components/ImageText"
-import { Link } from "gatsby"
 import Img from "gatsby-image"
 import {graphql} from "gatsby"
 export default ({data}) => (
@@ -85,7 +84,7 @@ export default ({data}) => (
                 This tool is complicated and has many parts and intricacies, so if you are interested to learn more, you can watch the video below:
             </p>
             <div css={{height:`0`,width:`100%`,paddingBottom:`56.25%`, position:`relative`}}>
-                <iframe css={{width:`100%`,height:`100%`, position:`absolute`,left:`0`,top:`0`}} width="560" height="315" src="https://www.youtube.com/embed/YOpwgr6HTC4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe title="Youtube Explanation" css={{width:`100%`,height:`100%`, position:`absolute`,left:`0`,top:`0`}} width="560" height="315" src="https://www.youtube.com/embed/YOpwgr6HTC4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </Project>
     </PageTemplate>

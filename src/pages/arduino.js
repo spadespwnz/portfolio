@@ -2,8 +2,6 @@ import React from "react"
 import Sidebar from "../components/sidebar"
 import Project from "../components/project_info"
 import PageTemplate from "../components/page_template"
-import ImageText from "../components/ImageText"
-import { Link } from "gatsby"
 import Img from "gatsby-image"
 import {graphql} from "gatsby"
 export default ({data}) => (
@@ -27,7 +25,7 @@ export default ({data}) => (
         </Sidebar>
         <Project>
             <div css={{height:`0`,width:`100%`,paddingBottom:`56.25%`, position:`relative`}}>
-                <iframe css={{width:`100%`,height:`100%`, position:`absolute`,left:`0`,top:`0`}} width="560" height="315" src="https://www.youtube.com/embed/tP3PCeuBgHY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe title="Example on YouTube" css={{width:`100%`,height:`100%`, position:`absolute`,left:`0`,top:`0`}} width="560" height="315" src="https://www.youtube.com/embed/tP3PCeuBgHY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <p>
                 This project makes use of an Arduino Microcontroller to controller buzzers and lights to play and visualize notes that are passed from a MIDI parser.

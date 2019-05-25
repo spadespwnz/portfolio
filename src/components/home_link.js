@@ -49,7 +49,9 @@ export default () => {
                  <Img fluid={data.file.childImageSharp.fluid} />
                 
             </div>
-            Nathan Brown
+            <div >
+              Nathan Brown
+            </div>
             </div>
         </div>
     )

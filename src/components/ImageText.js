@@ -19,7 +19,7 @@ export default (props) =>
                         <Img fluid={props.fluid} />
                     </div>
                  : 
-                    <img src={props.imgUrl} css={{width:`100%`, margin:`auto`, verticalAlign:`middle`}}></img>
+                    <img src={props.imgUrl} css={{width:`100%`, margin:`auto`, verticalAlign:`middle`}} alt='' ></img>
             }
             </div>
         </div>

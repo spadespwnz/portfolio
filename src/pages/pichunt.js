@@ -4,7 +4,6 @@ import Project from "../components/project_info"
 import PageTemplate from "../components/page_template"
 import ImageText from "../components/ImageText"
 import Img from "gatsby-image"
-import { Link, graphql} from "gatsby"
 export default ({data}) => (
     <div>
         <PageTemplate sidebar={true} width="1000px">

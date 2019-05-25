@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useRef} from "react"
+import React, {useState, useEffect} from "react"
 import BannerLink from "./banner_link"
 import BannerDropdown from "./banner_dropdown_links"
 import { navigate} from "gatsby"
@@ -14,7 +14,7 @@ export default () => {
             return;
         }
         const linkList = document.getElementById('mobile-links')
-        if (target != linkList){
+        if (target !== linkList){
 
             if (mobileListVisible){
                 toggleMobileList(false)
