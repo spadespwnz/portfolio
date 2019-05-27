@@ -33,12 +33,12 @@ export default ({data}) => (
                 be streamed to the Arduino over wifi. The timing of the notes is controlled by the parser, and the Arduino player plays the notes as they are received.
             </p>
             <p>
-                The notes are converted to a frequence before sent accross to the player, then each note is played by an individual buzzer.
+                The notes are converted to a frequency before sent across to the player, then each note is played by an individual buzzer.
             </p>
             <Img fluid={data.diagram1.childImageSharp.fluid} />
             <p>
-                Each buzzer needs to be powered on and off repeatedly to make a sound. The correct note is created by toggling power to the buzzer at the frequence of the note needed.
-                To achieve this, each buzzer is connected to a different pin, and when a note needs to be played, an interrupt timer is enabled for the pin that fires at the frequence needed,
+                Each buzzer needs to be powered on and off repeatedly to make a sound. The correct note is created by toggling power to the buzzer at the frequency of the note needed.
+                To achieve this, each buzzer is connected to a different pin, and when a note needs to be played, an interrupt timer is enabled for the pin that fires at the frequency needed,
                 and toggles power for the pin on and off. The frequencies of notes commonly used range between 100-1000.
             </p>
             <p>
@@ -56,7 +56,7 @@ export default ({data}) => (
             <Img fluid={data.diagram2.childImageSharp.fluid} />
             <p>
                 Using this technique, the maximum volume is only 50% of the volume normally possible. This works because of the way the human ear averages the output of frequencies higher 
-                than it can hear, and the specific note is created by the frequence at which it switches between no output, and high-frequence output.
+                than it can hear, and the specific note is created by the frequency at which it switches between no output, and high-frequency output.
             </p>
             <p>
                 The specific volume is managed by controlling percentage of time power is on or off during the high frequency sections of output.
@@ -73,7 +73,7 @@ export default ({data}) => (
             </p>
             <Img fluid={data.diagram4.childImageSharp.fluid} />
             <p>
-                The specific note is now being created by the frequence at which the volume on the buzzer shifts from 0% to 100% and back.
+                The specific note is now being created by the frequency at which the volume on the buzzer shifts from 0% to 100% and back.
             </p>
             <p>
                 When the ear hears a note which is complex, such as a note that can't be defined by a simple sine wave, it does a type of fourier analysis 
@@ -93,7 +93,7 @@ export default ({data}) => (
                 <Img css={{width:`33%`, display:`inline-block`, margin:`auto`}}fluid={data.spectrum3.childImageSharp.fluid} />
             </div>
             <p>
-                The left image and center image both show the buzzer playing one individual note, then the rightmost image shows the spectogram of the buzzer playing both notes at the 
+                The left image and center image both show the buzzer playing one individual note, then the rightmost image shows the spectrogram of the buzzer playing both notes at the 
                 same time. 
             </p>
             

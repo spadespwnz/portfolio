@@ -50,7 +50,7 @@ export default ({data}) => (
                 A record of all your previous poll results is kept, and can be accessed <a href="http://vote.spades.cloud/spadesbot/dashboard/polls">Here</a> after authenticating with the WebApp.
             </ImageText>
             <p>
-                The Overlay Application is made up of a few key parts interacting with eachother. The website is powered by NodeJS, running an Express Server. The other key component is 
+                The Overlay Application is made up of a few key parts interacting with each other. The website is powered by NodeJS, running an Express Server. The other key component is 
                 a twitch chat bot that listens to users channel's. When a user authenticates the site to their Twitch account, their username is added to a mongoDB database, and the twitch 
                 chat bot joins their chat channel and starts listening. The user is given an overlay URL, and this URL contains the code of channel used to communicate with the bot.
             </p>

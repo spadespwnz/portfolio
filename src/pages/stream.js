@@ -32,8 +32,8 @@ export default ({data}) => (
             </a>
             <p>
                 These are a few webpages built in relation to my livestream on Twitch. Their purpose it to provide some extra interaction for viewers that shows 
-            some of the game progress that has occured on the stream. The first page is a games list, which shows games that were intended to be played on stream, with some other related 
-            information. This list needs to be manually updated through an admin control panel, only accessable by me.
+            some of the game progress that has occurred on the stream. The first page is a games list, which shows games that were intended to be played on stream, with some other related 
+            information. This list needs to be manually updated through an admin control panel, only accessible by me.
             </p>
 
             <p>

@@ -43,9 +43,9 @@ export default ({data}) => (
                 selected.
             </p>
             <p>
-                The second tool, called <b>Ghost Mod</b>, allows the user to record an entire playthrough of a stage. When enabled, if the player completes a stage faster than previously it will 
-                automatically store the new data. This allows the user to easily keep a record of their fastest playthroughs of each stage. The player can also race against their fastest time, and this 
-                will create a clone of that playthrough in the game, and allow the player to see it while playing the stage.
+                The second tool, called <b>Ghost Mod</b>, allows the user to record an entire play-through of a stage. When enabled, if the player completes a stage faster than previously it will 
+                automatically store the new data. This allows the user to easily keep a record of their fastest play-throughs of each stage. The player can also race against their fastest time, and this 
+                will create a clone of that play-through in the game, and allow the player to see it while playing the stage.
             </p>
             <ImageText imgUrl="/vid/spadestools/vid1.webm" video={true} mirror={true}>
                 The player race's against his own fastest time through a level, and if he can win, the ghost data will be updated with this new fastest time.
@@ -56,17 +56,17 @@ export default ({data}) => (
                 the tool.
             </p>
             <p>
-                The Ghost Mod has 2 more main features, firstly it has a mode specifically designed for recording playthroughs of the entire game, instead of just a single level. Using this 
-                option will allow a player to race against his own Ghost for an entire playthrough of the game. This data is also easily uploaded and downloaded through the tool so that 
-                others can race against eachothers Ghosts. The Ghost mode also has a feature called Replay Mode, which instead of racing against the Ghost Data, it will let you watch the 
+                The Ghost Mod has 2 more main features, firstly it has a mode specifically designed for recording play-throughs of the entire game, instead of just a single level. Using this 
+                option will allow a player to race against his own Ghost for an entire play-through of the game. This data is also easily uploaded and downloaded through the tool so that 
+                others can race against each others Ghosts. The Ghost mode also has a feature called Replay Mode, which instead of racing against the Ghost Data, it will let you watch the 
                 Ghost play through the level. This allows the player to easily see exactly what other players are doing, or examine their own play for mistakes.
             </p>
             <p>
-                The next and most exciting tool is the <b>Race Mode</b>. This tool allows multiple players to race against eachother, and shows them in eachothers game. One player 
+                The next and most exciting tool is the <b>Race Mode</b>. This tool allows multiple players to race against each other, and shows them in each others game. One player 
                 must run the server, then all players must connect to this server, and into a specific race room. 
             </p>
             <ImageText imgUrl="/vid/spadestools1.webm" video={true} mirror={true}>
-                Once the players have joined the server together, they will be able to see eachother in their game.
+                Once the players have joined the server together, they will be able to see each other in their game.
             </ImageText>
             <p>
                 This functionality is achieved by each player's game creating a clone of itself for each other player in the server, then injecting the other players 
@@ -75,7 +75,7 @@ export default ({data}) => (
             </p>
             <p>
                 The last tool is the <b>Rewinder</b>. This gives the players the ability to rewind, frame by frame, through the level. They can continue playing from any frame they choose. 
-                While rewinding through the level, copies of the game character are created on the path they took, which acts as a visualization of the playthrough that they can traverse through.
+                While rewinding through the level, copies of the game character are created on the path they took, which acts as a visualization of the play-through that they can traverse through.
             </p>
             <ImageText imgUrl="/vid/spadestools/vid2.webm" video={true} mirror={false}>
                 The rewinder can be used freely as many times as wanted, and it correctly sets the game time so it can be used to test specific timings.

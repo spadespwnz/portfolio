@@ -27,7 +27,7 @@ export default ({data}) => (
             
             <Img fluid={data.logo.childImageSharp.fluid}></Img>
             <h2 css={{textAlign: `center`, opacity:`.5`}}>
-                Under Developement
+                Under Development
             </h2>
             <p>
                 PicHunt is a recreational mobile app for Android Devices. Create hunts for other people to search for by taking a picture of an interesting location.
