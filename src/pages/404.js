@@ -1,6 +1,4 @@
 import React from "react"
-import Sidebar from "../components/sidebar"
-import Project from "../components/project_info"
 import PageTemplate from "../components/page_template"
 import styles from "../pages/error404.module.css"
 export default () => (
