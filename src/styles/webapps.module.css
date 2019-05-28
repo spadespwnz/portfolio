@@ -1,0 +1,11 @@
+.sidebar_page_link{
+    text-decoration: none;
+    color: black;
+    opacity: .5;
+    font-weight: 600;
+    display: block;
+}
+.sidebar_page_link:hover{
+    color: rgb(255, 132, 132);
+    opacity: 0.75;
+}

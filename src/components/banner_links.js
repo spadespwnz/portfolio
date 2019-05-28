@@ -54,6 +54,7 @@ export default () => {
             <BannerDropdown name="Experiments" items={[
                                                 {name:"Unity Testing", url:"unity"},
                                                 {name:"Jog Tracker", url:"jog"},
+                                                {name:"WebApp Experiments", url:"webapps"},
                                                 {name:"Discord Condensor", url:"discord_bot"}]}
                                             />
 
@@ -62,7 +63,6 @@ export default () => {
                                                 {name:"Twitch Overlay",url:"polls"},
                                                 {name:"Streaming Suite",url:"stream"},
                                                 {name:"Study Notifications (Gomain3)", url:"study"},
-                                                {name:"Various Simple Webapps (chat/lists/images/etc)", url:"webapp"},
                                                 {name:"Arduino Motor Controller",url:"arduino_motor"},
                                                 {name:"SPaDeS Tools Race Server", url:"race_server"}]}
                                             />
@@ -111,14 +111,14 @@ export default () => {
                             <li className="mobile-list-item" onClick={e => {navigate("")}}>
                                 [WIP] Alexandria
                             </li>
-                            <li className="mobile-list-item" onClick={e => {navigate("")}}>
+                            <li className="mobile-list-item" onClick={e => {navigate("bfassist")}}>
                                 BFAssist
                             </li>
-                            <li className="mobile-list-item" onClick={e => {navigate("")}}>
+                            <li className="mobile-list-item" onClick={e => {navigate("stream")}}>
                                 Personal Stream Suite
                             </li>
-                            <li className="mobile-list-item" onClick={e => {navigate("")}}>
-                                Various Simple WebApps
+                            <li className="mobile-list-item" onClick={e => {navigate("webapps")}}>
+                                WebApp Experiments
                             </li>
                             <li className="mobile-list-item" onClick={e => {navigate("")}}>
                                 Study Notifications
