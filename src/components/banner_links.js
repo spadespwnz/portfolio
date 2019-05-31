@@ -52,7 +52,6 @@ export default () => {
                                                 {name:"Shooter - Unity", url:"shooter"}]} />
 
             <BannerDropdown name="Experiments" items={[
-                                                {name:"Unity Testing", url:"unity"},
                                                 {name:"Jog Tracker", url:"jog"},
                                                 {name:"WebApp Experiments", url:"webapps"},
                                                 {name:"Discord Condensor", url:"discord_bot"}]}
@@ -62,9 +61,8 @@ export default () => {
                                                 name:"BFAssist", url:"bfassist"},
                                                 {name:"Twitch Overlay",url:"polls"},
                                                 {name:"Streaming Suite",url:"stream"},
-                                                {name:"Study Notifications (Gomain3)", url:"study"},
-                                                {name:"Arduino Motor Controller",url:"arduino_motor"},
-                                                {name:"SPaDeS Tools Race Server", url:"race_server"}]}
+                                                {name:"Study Notifications", url:"study"},
+                                                ]}
                                             />
             <div css={{"@media all and (min-width: 976px)":{display:`none`}, display:`block`, position:`relative`, 
                 zIndex:`3`}}>
@@ -127,22 +125,13 @@ export default () => {
                                 Jog Tracker
                             </li>
                             <li className="mobile-list-item" onClick={e => {navigate("")}}>
-                                Race Server for SPaDeS Tool
-                            </li>
-                            <li className="mobile-list-item" onClick={e => {navigate("")}}>
-                                Arduino Motor Controller
-                            </li>
-                            <li className="mobile-list-item" onClick={e => {navigate("")}}>
                                 Discord Condensor
                             </li>
-                            <li className="mobile-list-item" onClick={e => {navigate("")}}>
+                            <li className="mobile-list-item" onClick={e => {navigate("study")}}>
                                 Study Notifications
                             </li>
                             <li className="mobile-list-item" onClick={e => {navigate("")}}>
                                 [WIP] Top-Down Space Shooter
-                            </li>
-                            <li className="mobile-list-item" onClick={e => {navigate("")}}>
-                                Unity Experiment
                             </li>
                         </ul>
 

@@ -23,6 +23,7 @@ export default () => (
                 Nathan Brown
                 </p>
                 <a href="mailto:NathanBrownDev@gmail.com" css={{textDecoration: `underline`, color: `rgb(255, 132, 132)`}}>NathanBrownDev@gmail.com</a>
+                <p>1-807-355-5820</p>
                 <p css={{color:`rgb(175, 175, 175)`}}>
                     Feel free to send me an email with any questions, concerns, or opportunities.
                 </p>
