@@ -54,7 +54,7 @@ export default () => {
             <BannerDropdown name="Experiments" items={[
                                                 {name:"Jog Tracker", url:"jog"},
                                                 {name:"WebApp Experiments", url:"webapps"},
-                                                {name:"Discord Condensor", url:"discord_bot"}]}
+                                                {name:"Discord Condenser", url:"discord_bot"}]}
                                             />
 
             <BannerDropdown name="Other" items ={[{
@@ -125,7 +125,7 @@ export default () => {
                                 Jog Tracker
                             </li>
                             <li className="mobile-list-item" onClick={e => {navigate("")}}>
-                                Discord Condensor
+                                Discord Condenser
                             </li>
                             <li className="mobile-list-item" onClick={e => {navigate("study")}}>
                                 Study Notifications

@@ -14,7 +14,7 @@ export default ({data}) => (
                 <a href="http://www.spades.cloud/stream/gameslist">Games List</a>
             </span>
             <span css={{display:`block`}}>
-                <a href="http://www.spades.cloud/stream/gameslist">Mario Maker Levels</a>
+                <a href="http://www.spades.cloud/stream/smm">Mario Maker Levels</a>
             </span>
 
             <p css={{marginBlockEnd:`0`}}>Github:</p>
