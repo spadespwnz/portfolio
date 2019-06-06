@@ -22,6 +22,18 @@ export default ({data}) => (
             This is a Top-Down shooter currently being developed using the Unity Game Engine. The game will make use of ideas from a range of genres including 
             roguelike's, Shoot 'em Up's and more.
             </p>
+            <p>
+                The goal of the game is to search room by room looking for upgrades, secrets, or a path to the next level. The layout is randomly generated every time you play, 
+                giving you a new experience each time.
+            </p>
+            <p>
+                Each floor has as boss which makes use of more complicated bullet patterns, and must be defeated before moving on to the next level.
+                There will be a variety of different enemies with their own movement patterns and bullet patterns. To succeed you must learn to efficiently deal with 
+                all the combinations of enemies.
+            </p>
+            <div css={{width:`100%`, textAlign:`center`, marginTop:`10px`, marginBottom:`10px`}}>
+                <video css={{maxWidth:`80%`, marginLeft:`10%`, marginRight:`10%`}} src="/vid/unity_game/gameplay.webm" muted autoPlay="autoplay" loop></video>
+            </div>
         </Project>
     </PageTemplate>
 )
@@ -36,4 +48,14 @@ export const query = graphql`
         }
       }
     },
+    room: file(relativePath: { eq: "shooter/room.png" }) {
+        childImageSharp {
+          # Specify the image processing specifications right in the query.
+          # Makes it trivial to update as your page's design changes.
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          }
+        }
+      },
+
 }`
