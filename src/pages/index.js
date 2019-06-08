@@ -76,7 +76,7 @@ export default ({data}) => (
                 <a href="mailto:NathanBrownDev@gmail.com" css={{textDecoration: `underline`, color: `rgb(255, 132, 132)`}}>NathanBrownDev@gmail.com</a>
                 <p>1-807-355-5820</p>
             </p>
-            <Link to="/resume.pdf">Resume</Link>
+            <a href="/resume.pdf">Resume</a>
         </PageTemplate>
     </div>
 )
