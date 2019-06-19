@@ -31,7 +31,9 @@ export default (props) => {
         <Content sidebar={props.sidebar} width={props.width}>
             {props.children}
         </Content>
+        {/*
         <External />
+        */}
         <Footer />
     </div>
 )

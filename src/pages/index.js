@@ -20,7 +20,9 @@ export default ({data}) => (
                 Received my <b>Bachelor's of Computer Science</b> from Lakehead University, Thunder Bay, Ontario.
             </p>
             <p>
+              {/*
             Currently I reside in Thunder Bay, Ontario, yet am open to relocating for a job opportunity. I am a full Canadian citizen looking for employment as a developer within Canada.
+              */}
             </p>
             
                 
@@ -66,7 +68,7 @@ export default ({data}) => (
                 Development tools: NPM, webpack, Gatsby, Jenkins, git, DevTools; Cloud Providers: Amazon AWS, Heroku; and Development Suites: Unity, Android Studio.
             </p>
             
-            
+            {/*
             <Title title="HIRE" />
             <p>
                 As a dedicated, knowledgeable and systematic software developer, I can help bring any project to life. I would love the opportunity
@@ -77,6 +79,7 @@ export default ({data}) => (
                 <p>1-807-355-5820</p>
             </p>
             <a href="/resume.pdf">Resume</a>
+            */}
         </PageTemplate>
     </div>
 )
